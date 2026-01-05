@@ -16,13 +16,27 @@
         </div>
         <nav>
             <span class="language">en</span>
-            <button class="btn__menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+            <button class="btn__menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav" data-menu-toggle="menu">
                 <span class="menu__boutton__barre" aria-hidden="true"></span>
                 <span class="menu__boutton__barre" aria-hidden="true"></span>
                 <span class="menu__boutton__barre" aria-hidden="true"></span>
             </button>
         </nav>
     </header>
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+    <nav class="menu-mobile" id="mainNav" aria-hidden="true">
+        <div class="menu-mobile__content">
+            <h2 class="menu-mobile__title">Menu</h2>
+            <ul class="menu-mobile__list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Sa découverte</a></li>
+                <li><a href="article-3.html">Les femmes de science dans la littérature</a></li>
+                <li><a href="article-4.html">Cinéma : réhabiliter les oubliés</a></li>
+                <li><a href="article-5.html">Objet de la BU</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main class="about">
         <section class="about__section">
@@ -37,6 +51,7 @@
         <section class="about__section">
             <h2>Mon approche</h2>
             <article class="about__card">
+                <h3>Rigueur et accessibilité</h3>
                 <p>Ce projet est né de la volonté de mettre en lumière une injustice historique trop souvent ignorée : l'effet Matilda, ce phénomène systématique qui efface les contributions des femmes scientifiques.</p>
 
                 <p>En me concentrant sur Lise Meitner, physicienne brillante dont le rôle dans la découverte de la fission nucléaire a été minimisé, j'ai souhaité créer un site accessible qui sensibilise le grand public.</p>
