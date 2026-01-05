@@ -444,23 +444,7 @@ nav {
    NAVIGATION CAROUSEL (BOUTONS)
    =============================================== */
 .carousel__nav {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
-    background: var(--title);
-    color: var(--bg);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 700;
-    z-index: 10;
-    transition: all 0.3s ease;
+    display: none;
 }
 
 .carousel__nav:hover {
