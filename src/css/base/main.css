@@ -248,7 +248,7 @@ nav {
    HERO SECTION
    =============================================== */
 .hero {
-    padding: 100px var(--gutter) 50px;
+    padding: 100px 24px 50px 24px;
     text-align: left;
 }
 
@@ -260,8 +260,12 @@ nav {
     text-transform: none;
 }
 
+.hero h1 {
+    margin-bottom: 24px;
+}
+
 .hero__description {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--text-muted);
     margin-bottom: 30px;
     line-height: 1.6;
@@ -271,8 +275,8 @@ nav {
     background: var(--card-bg);
     color: var(--text-dark);
     padding: 22px 24px;
-    border-radius: 50px;
-    margin-top: 30px;
+    border-radius: 60px;
+    margin-top: 60px;
 }
 
 .hero__quote blockquote {
