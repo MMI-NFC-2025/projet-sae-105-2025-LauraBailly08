@@ -6,7 +6,8 @@
    =============================================== */
 :root {
     --bg: #080C14;
-    --title: #AD46FF;
+    --title: #DAB2FF;
+    --title-article: #AD46FF;
     --card-bg: #F8F0FF;
     --text: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.8);
@@ -59,7 +60,7 @@ img {
    TYPOGRAPHIE
    =============================================== */
 h1 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     color: var(--title);
     line-height: 1.2;
@@ -75,9 +76,9 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    color: var(--title);
+    color: var(--title-article);
     margin-bottom: 12px;
 }
 
@@ -336,7 +337,7 @@ nav {
 }
 
 .featured__content h3 {
-    color: var(--title);
+    color: var(--title-article);
     font-size: 22px;
     margin-bottom: 12px;
 }
@@ -350,7 +351,7 @@ nav {
 
 .featured__link {
     display: inline-block;
-    color: var(--title);
+    color: var(--title-article);
     font-weight: 600;
     font-size: 18px;
     text-decoration: underline;
@@ -399,8 +400,8 @@ nav {
 }
 
 .carousel__content h3 {
-    color: var(--title);
-    font-size: 20px;
+    color: var(--title-article);
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -413,7 +414,7 @@ nav {
 
 .carousel__link {
     display: inline-block;
-    color: var(--title);
+    color: var(--title-article);
     font-weight: 600;
     font-size: 16px;
     text-decoration: underline;
