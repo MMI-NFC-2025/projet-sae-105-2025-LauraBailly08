@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 700;
     color: var(--title);
     line-height: 1.3;
@@ -270,8 +270,8 @@ nav {
 .hero__quote {
     background: var(--card-bg);
     color: var(--text-dark);
-    padding: 20px 24px;
-    border-radius: var(--border-radius);
+    padding: 22px 24px;
+    border-radius: 50px;
     margin-top: 30px;
 }
 
