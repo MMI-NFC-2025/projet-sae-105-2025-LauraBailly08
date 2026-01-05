@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La fission nucléaire est l'une des découvertes scientifiques les plus importantes du XXe siècle, et Lise Meitner a joué un rôle crucial dans son explication.">
+    <title>Sa découverte - Noyaux d'ombre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="header__logo" src="assets/logo matilda.svg" alt="Logo de Noyaux d'ombre">
+            <a href="index.html">Noyaux d'ombre</a>
+        </div>
+        <nav>
+            <span class="language">en</span>
+            <button class="btn__menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav" data-menu-toggle="menu">
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+    <!-- Menu navigation mobile -->
+    <nav class="menu-mobile" id="mainNav" aria-hidden="true">
+        <div class="menu-mobile__content">
+            <h2 class="menu-mobile__title">Menu</h2>
+            <ul class="menu-mobile__list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Sa découverte</a></li>
+                <li><a href="article-3.html">Les femmes de science dans la littérature</a></li>
+                <li><a href="article-4.html">Cinéma : réhabiliter les oubliés</a></li>
+                <li><a href="article-5.html">Objet de la BU</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="article">
+        <header class="article__header">
+            <h1>Sa découverte</h1>
+            <div class="article__meta">
+                <time datetime="2025-10-20">20 octobre 2025</time>
+                <span class="article__reading-time">2 min</span>
+            </div>
+        </header>
+        <section class="article__section">
+            <h2>La fission nucléaire expliquée</h2>
+            <p>La <a href="glossaire.html" class="glossary-link">fission nucléaire</a> est l'une des découvertes scientifiques les plus importantes du XXe siècle. Pour bien la comprendre, il faut d'abord comprendre la structure de l'atome.</p>
+
+            <p>Un <a href="glossaire.html" class="glossary-link">atome</a> est composé d'un noyau central contenant des <a href="glossaire.html" class="glossary-link">protons</a> et des <a href="glossaire.html" class="glossary-link">neutrons</a>, entouré d'électrons. Parmi les éléments lourds comme l'uranium, le noyau contient beaucoup de particules et de neutrons.</p>
+
+            <p>Quand un neutron percute le noyau d'un atome d'uranium, celui-ci devient extrêmement instable. Le noyau se brise alors en deux ou plusieurs éléments et une grande quantité d'énergie est libérée. Ces nouveaux neutrons créent une <a href="glossaire.html" class="glossary-link">réaction en chaîne</a>.</p>
+
+            <figure class="article__figure">
+                <img src="assets/image 1 sa decouverte.avif" alt="Schéma illustrant la fission nucléaire">
+                <figcaption>Fission nucléaire : principes physiques expliquant simplement</figcaption>
+            </figure>
+        </section>
+
+        <section class="article__section">
+            <h2>La découverte de Lise Meitner</h2>
+            <p>En décembre 1938, lors d'une promenade dans la neige en Suède, Lise Meitner et son neveu Otto Frisch, discutent et expliquent les résultats expérimentaux d'Otto Hahn. Ils comprennent que le noyau d'<a href="glossaire.html" class="glossary-link">uranium</a> s'est scindé.</p>
+
+            <p>Grâce à Meitner et Frisch, nous avons pu comprendre comment fonctionne la fission nucléaire. Cette découverte a conduit à l'apparition de l'énergie nucléaire et, malheureusement, aux armes atomiques.</p>
+
+            <figure class="article__figure article__figure--secondary">
+                <img src="assets/image 2 sa découverte.avif" alt="Lise Meitner et Otto Frisch travaillant ensemble">
+                <figcaption>En 1945, Niels Boehm, le futur directeur du laboratoire de Los Alamos et le dernier fils de Lise Meitner, Frisch, aidèrent à venir à Los Alamos participer aux projets secrets.</figcaption>
+            </figure>
+
+            <p>Lise Meitner a toujours refusé de participer au projet Manhattan.</p>
+
+            <blockquote class="article__quote">
+                <p>"Je ne regrette pas de n'avoir jamais travaillé sur la bombe atomique."</p>
+                <cite>— Lise Meitner</cite>
+            </blockquote>
+        </section>
+
+        <section class="related-articles">
+            <h2>Articles connexes</h2>
+            <div class="related-articles__grid">
+                <article class="related-card">
+                    <img src="assets/image1 page d'accueil.avif" alt="Portrait de Lise Meitner">
+                    <div class="related-card__content">
+                        <h3>Qui était Lise Meitner</h3>
+                        <a href="article-1.html" class="related-card__link">lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="related-card">
+                    <img src="assets/image article femme science page d'aaccueil.avif" alt="Les femmes de science">
+                    <div class="related-card__content">
+                        <h3>Les femmes dans la science</h3>
+                        <a href="article-3.html" class="related-card__link">lire l'article</a>
+                    </div>
+                </article>
+            </div>
+
+            <a href="glossaire.html" class="article__glossary-link">
+                <img src="assets/icone glossaire.svg" alt="" class="article__glossary-icon">
+                <span>Consulter le glossaire</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="assets/logo matilda.svg" alt="Logo Noyaux d'ombre" class="footer__logo">
+            <span class="footer__name">Noyaux d'ombre</span>
+        </div>
+        <p class="footer__description">Mettre en lumière les contributions scientifiques des femmes</p>
+        
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Sa découverte</a></li>
+                <li><a href="article-3.html">Les femmes de science dans la littérature</a></li>
+                <li><a href="article-4.html">Cinéma : réhabiliter les oubliés</a></li>
+                <li><a href="article-5.html">Hidden figure</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer__links">
+            <ul class="footer__links-list">
+                <li><a href="à-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autres-projets.html">Autre projets</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+            </ul>
+        </nav>
+
+        <p class="footer__copyright">2025 Noyaux d'ombre</p>
+        <p class="footer__credit">projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
+    </footer>
+</body>
+</html>

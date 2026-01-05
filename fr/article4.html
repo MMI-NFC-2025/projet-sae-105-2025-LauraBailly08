@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le cinéma joue un rôle crucial dans la réhabilitation des femmes scientifiques oubliées par l'histoire.">
+    <title>Cinéma : réhabiliter les oubliés - Noyaux d'ombre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header class="header">
+        <div class="logo">
+            <img class="header__logo" src="assets/logo matilda.svg" alt="Logo de Noyaux d'ombre">
+            <a href="index.html">Noyaux d'ombre</a>
+        </div>
+        <nav>
+            <span class="language">en</span>
+            <button class="btn__menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav" data-menu-toggle="menu">
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+    <!-- Menu navigation mobile -->
+    <nav class="menu-mobile" id="mainNav" aria-hidden="true">
+        <div class="menu-mobile__content">
+            <h2 class="menu-mobile__title">Menu</h2>
+            <ul class="menu-mobile__list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Sa découverte</a></li>
+                <li><a href="article-3.html">Les femmes de science dans la littérature</a></li>
+                <li><a href="article-4.html">Cinéma : réhabiliter les oubliés</a></li>
+                <li><a href="article-5.html">Objet de la BU</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu principal de l'article -->
+    <main class="article">
+        <!-- En-tête de l'article -->
+        <header class="article__header">
+            <h1>Cinéma : Réhabiliter les oubliés</h1>
+            <div class="article__meta">
+                <time datetime="2025-10-20">20 octobre 2025</time>
+                <span class="article__reading-time">3 min</span>
+            </div>
+        </header>
+
+        <!-- Section principale -->
+        <section class="article__section">
+            <h2>"Picture a Scientist" : documentaire choc sur le sexisme scientifique</h2>
+            
+            <figure class="article__figure">
+                <img src="assets/image 4 cinéma.avif" alt="Affiche du documentaire Picture a Scientist">
+                <figcaption>NOVA - Picture à Scientist</figcaption>
+            </figure>
+
+            <p>Ce documentaire de 2020 dévoile le harcèlement et la discrimination que subissent les femmes scientifiques. Un film qui recense les témoignages de scientifiques féminines et l'effet Matilda en action de manière.</p>
+
+            <p>Cliquez pour lancer la bande annonce</p>
+
+            <div class="video-placeholder">
+                <button class="video-play-btn" aria-label="Lecture de la vidéo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8v32l24-16z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <p>"Picture a Scientist" est un documentaire sorti en 2020 qui traite en lumière le sexisme systématique dans la plupart scientifique. À travers des chimistes et géologues, le film révèle que l'Expérience Matilda n'épargne personne et offre une réalité actuelle.</p>
+        </section>
+
+        <!-- Section: Films recommandés -->
+        <section class="article__section">
+            <h2>5 films pour mieux comprendre l'effet Matilda</h2>
+            
+            <div class="films-carousel">
+                <button class="carousel__nav carousel__nav--prev" aria-label="Film précédent">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="films-container">
+                    <article class="film-card">
+                        <img src="assets/image 1 cinéma.avif" alt="Radioactive">
+                        <div class="film-card__content">
+                            <h3>Radioactive</h3>
+                            <p class="film-card__year">2020</p>
+                            <p class="film-card__director">Marjane Satrapi</p>
+                            <p class="film-card__description">Un biopic sur Marie Curie et sa vie tumultueuse dans la recherche scientifique.</p>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="assets/image 2 cinéma.avif" alt="Big Eyes">
+                        <div class="film-card__content">
+                            <h3>Big Eyes</h3>
+                            <p class="film-card__year">2014</p>
+                            <p class="film-card__director">Tim Burton</p>
+                            <p class="film-card__description">L'histoire d'une artiste dont les œuvres sont attribuées à son mari.</p>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="assets/image 3 cinéma.avif" alt="Hidden Figures">
+                        <div class="film-card__content">
+                            <h3>Hidden Figures</h3>
+                            <p class="film-card__year">2016</p>
+                            <p class="film-card__director">Theodore Melfi</p>
+                            <p class="film-card__description">Le destin de trois mathématiciennes noires de la NASA.</p>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="assets/image 5 cinéma.avif" alt="Rosies Top Secret">
+                        <div class="film-card__content">
+                            <h3>Rosies Top Secret</h3>
+                            <p class="film-card__year">1970</p>
+                            <p class="film-card__director">Guy Le Bouchman</p>
+                            <p class="film-card__description">Documentaire sur les femmes d'espionnage durant la Seconde Guerre mondiale</p>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="assets/image 6 cinéma.avif" alt="Meitner on Bomb">
+                        <div class="film-card__content">
+                            <h3>Meitner on Bomb</h3>
+                            <p class="film-card__year">2015</p>
+                            <p class="film-card__director">Arti von Packhardt</p>
+                            <p class="film-card__description">Documentaire sur Lise Meitner et son refus de participer au projet Manhattan.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="carousel__nav carousel__nav--next" aria-label="Film suivant">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Articles connexes -->
+        <section class="related-articles">
+            <h2>Article connexe</h2>
+            <div class="related-articles__grid">
+                <article class="related-card">
+                    <img src="assets/image article hidden figure page d'accueil.avif" alt="Hidden Figures">
+                    <div class="related-card__content">
+                        <h3>Hidden figures</h3>
+                        <a href="article-5.html" class="related-card__link">lire l'article</a>
+                    </div>
+                </article>
+            </div>
+
+            <a href="glossaire.html" class="article__glossary-link">
+                <img src="assets/icone glossaire.svg" alt="" class="article__glossary-icon">
+                <span>Consulter le glossaire</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="assets/logo matilda.svg" alt="Logo Noyaux d'ombre" class="footer__logo">
+            <span class="footer__name">Noyaux d'ombre</span>
+        </div>
+        <p class="footer__description">Mettre en lumière les contributions scientifiques des femmes</p>
+        
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Sa découverte</a></li>
+                <li><a href="article-3.html">Les femmes de science dans la littérature</a></li>
+                <li><a href="article-4.html">Cinéma : réhabiliter les oubliés</a></li>
+                <li><a href="article-5.html">Hidden figure</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer__links">
+            <ul class="footer__links-list">
+                <li><a href="à-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autres-projets.html">Autre projets</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+            </ul>
+        </nav>
+
+        <p class="footer__copyright">2025 Noyaux d'ombre</p>
+        <p class="footer__credit">projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
+    </footer>
+</body>
+</html>
