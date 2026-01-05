@@ -460,30 +460,31 @@ nav {
 }
 
 /* ===============================================
-   PAGINATION (DOTS)
+   CAROUSEL PAGINATION
    =============================================== */
 .carousel__pagination {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
     margin-top: 20px;
 }
 
-.carousel__indicator {
-    width: 8px;
-    height: 8px;
-    background: rgba(218, 178, 255, 0.3);
+.carousel__dot {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    background-color: rgba(173, 70, 255, 0.3);
     border: none;
     cursor: pointer;
-    padding: 0;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.carousel__indicator.active {
-    background: var(--title);
-    width: 24px;
-    border-radius: 4px;
+.carousel__dot--active {
+    background-color: var(--title-article);
+}
+
+.carousel__dot:hover {
+    background-color: var(--title-article);
 }
 
 /* ===============================================

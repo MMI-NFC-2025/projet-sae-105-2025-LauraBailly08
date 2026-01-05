@@ -43,35 +43,51 @@ document.addEventListener('DOMContentLoaded', () => {
        2. CAROUSEL (SCROLL INFINI)
        ========================================= */
     const carouselContainer = document.querySelector('.carousel__container');
+    const dots = document.querySelectorAll('.carousel__dot');
 
-    if (carouselContainer) {
+    if (carouselContainer && dots.length > 0) {
         const cards = carouselContainer.querySelectorAll('.carousel__card');
         const cardWidth = 300; // 280px + 20px gap
         let currentIndex = 0;
 
-        // Clone du premier et dernier article pour la boucle infinie
+        // Clone du premier article pour afficher à la fin
         const firstCardClone = cards[0].cloneNode(true);
-        const lastCardClone = cards[cards.length - 1].cloneNode(true);
-
         carouselContainer.appendChild(firstCardClone);
-        carouselContainer.insertBefore(lastCardClone, cards[0]);
 
-        // Initialiser le scroll au premier article réel
-        carouselContainer.scrollLeft = cardWidth;
-
-        // Gestion de la boucle infinie
+        // Mettre à jour les points lors du scroll
         carouselContainer.addEventListener('scroll', () => {
             const scrollLeft = carouselContainer.scrollLeft;
-            const maxScroll = carouselContainer.scrollWidth - carouselContainer.clientWidth;
+            currentIndex = Math.round(scrollLeft / cardWidth);
 
-            // Si on arrive à la fin, revenir au début
-            if (scrollLeft >= maxScroll - 10) {
-                carouselContainer.scrollLeft = cardWidth;
+            // Limiter l'index au nombre de cartes réelles
+            const activeIndex = currentIndex % cards.length;
+
+            // Mettre à jour les points
+            dots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.add('carousel__dot--active');
+                } else {
+                    dot.classList.remove('carousel__dot--active');
+                }
+            });
+
+            // Si on arrive à la fin, dupliquer les articles et continuer
+            const maxScroll = carouselContainer.scrollWidth - carouselContainer.clientWidth;
+            if (scrollLeft >= maxScroll - 100) {
+                cards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    carouselContainer.appendChild(clone);
+                });
             }
-            // Si on revient au début, aller à la fin
-            else if (scrollLeft <= 10) {
-                carouselContainer.scrollLeft = maxScroll - cardWidth;
-            }
+        });
+
+        // Cliquer sur un point pour scroller jusqu'à cet article
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                const scrollPosition = index * cardWidth;
+                carouselContainer.scrollLeft = scrollPosition;
+                currentIndex = index;
+            });
         });
     }
 });
