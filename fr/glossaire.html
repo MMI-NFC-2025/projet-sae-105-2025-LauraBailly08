@@ -16,7 +16,7 @@
         </div>
         <nav>
             <span class="language">en</span>
-            <button class="btn__menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+            <button class="btn_menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav" data-menu-toggle="menu">
                 <span class="menu__boutton__barre" aria-hidden="true"></span>
                 <span class="menu__boutton__barre" aria-hidden="true"></span>
                 <span class="menu__boutton__barre" aria-hidden="true"></span>
@@ -24,13 +24,29 @@
         </nav>
     </header>
 
+    <div class="menu-overlay" data-menu-toggle="menu"></div>
+    <nav class="menu-mobile" id="mainNav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="article-1.html">Lise Meitner</a></li>
+            <li><a href="article-2.html">Sa découverte</a></li>
+            <li><a href="article-3.html">Les femmes de science</a></li>
+            <li><a href="article-4.html">Cinéma</a></li>
+            <li><a href="article-5.html">Hidden Figures</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+            <li><a href="à-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="autres-projets.html">Autres projets</a></li>
+        </ul>
+    </nav>
+
     <main class="glossary">
         <header class="glossary__header">
             <h1>Glossaire</h1>
             <p>Termes et concepts clés</p>
         </header>
 
-        <section class="glossary__terms">
+        <div class="glossary__terms">
             <article class="glossary-term">
                 <h2>Effet Matilda :</h2>
                 <p>Phénomène systématique par lequel les contributions scientifiques des femmes sont minimisées, déniées ou attribuées à leurs collègues masculins. Nommé en référence à Matilda Joslyn Gage, suffragette américaine du XIXe siècle.</p>
@@ -66,7 +82,7 @@
                 <p>Physicien austro-britannique (1904-1979), neveu de Lise Meitner. Il collabora avec sa tante pour expliquer théoriquement les résultats expérimentaux d'Otto Hahn en décembre 1938 lors d'une promenade dans la neige en Suède.</p>
                 <a href="https://www.wikipedia.org" class="glossary-link">En savoir plus sur Wikipédia</a>
             </article>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
