@@ -641,7 +641,7 @@ nav {
 .article {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--gutter);
+    padding: 120px var(--gutter);
 }
 
 .article__header {
@@ -649,7 +649,7 @@ nav {
 }
 
 .article__header h1 {
-    font-size: 36px;
+    font-size: 40px;
     color: var(--title);
     margin-bottom: 20px;
     line-height: 1.2;
@@ -678,7 +678,7 @@ nav {
 }
 
 .article__intro-text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     color: var(--text);
 }
@@ -698,6 +698,7 @@ nav {
     font-size: 14px;
     color: var(--text-muted);
     font-style: italic;
+    text-align: left;
 }
 
 .article__figure--secondary {
@@ -709,7 +710,7 @@ nav {
 }
 
 .article__section h2 {
-    font-size: 28px;
+    font-size: 22px;
     color: var(--title);
     margin-bottom: 20px;
     margin-top: 40px;
@@ -723,7 +724,7 @@ nav {
 }
 
 .article__link {
-    color: var(--title-article);
+    color: var(--title);
     text-decoration: underline;
     transition: opacity 0.2s ease;
 }
@@ -733,49 +734,41 @@ nav {
 }
 
 .article__quote {
-    background: rgba(173, 70, 255, 0.1);
-    border-left: 4px solid var(--title-article);
-    padding: 24px;
+    background: var(--card-bg);
+    border-left: none;
+    padding: 22px;
     margin: 40px 0;
-    border-radius: var(--border-radius);
+    border-radius: 60px;
 }
 
 .article__quote p {
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
-    color: var(--text);
-    margin-bottom: 12px;
+    color: var(--text-dark);
+    margin-bottom: 8px;
 }
 
 .article__quote cite {
-    font-size: 16px;
-    color: var(--text-muted);
-    font-style: normal;
+    font-size: 14px;
+    color: var(--text-dark);
+    font-style: italic;
 }
 
 .article__Glossary-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--title-article);
+    color: var(--title);
+    text-decoration: underline;
     font-weight: 600;
     font-size: 16px;
-    text-decoration: none;
+    gap: 8px;
     margin-top: 30px;
-    padding: 12px 20px;
-    border: 2px solid var(--title-article);
-    border-radius: var(--border-radius);
-    transition: all 0.3s ease;
-}
-
-.article__Glossary-link:hover {
-    background: var(--title-article);
-    color: var(--bg);
 }
 
 .article__Glossary-icon {
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
 }
 
 /* Articles connexes */
