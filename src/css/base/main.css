@@ -8,7 +8,7 @@
     --bg: #080C14;
     --title: #DAB2FF;
     --title-article: #AD46FF;
-    --card-bg: #F8F0FF;
+    --card-bg: #F3E7FF;
     --text: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.8);
     --text-dark: #1a1a1a;
@@ -1021,6 +1021,255 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+/* ===============================================
+   GLOSSAIRE (page Glossaire)
+   =============================================== */
+.Glossary {
+    max-width: var(--max-width);
+    padding: 120px 20px 60px; /* espace sous header fixe */
+    margin: 0 auto;
+}
+
+/* ===============================================
+   AUTRES PROJETS
+   =============================================== */
+.other-projects {
+    max-width: var(--max-width);
+    padding: 120px 20px 60px;
+    margin: 0 auto;
+}
+
+.projects__header h1 {
+    color: var(--title);
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.projects__header p {
+    text-align: center;
+    color: var(--text-muted);
+    margin: 0 0 8px 0;
+}
+
+.projects__liést,
+.projects__list {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.project-card {
+    background: transparent;
+    padding: 10px 4px;
+}
+
+.project-card h2 {
+    display: inline;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.project-card h2::after {
+    content: " ";
+}
+
+.project-link {
+    color: var(--title-article);
+    text-decoration: underline;
+}
+
+/* ===============================================
+   CONTACT
+   =============================================== */
+.contact {
+    max-width: var(--max-width);
+    padding: 120px 20px 60px;
+    margin: 0 auto;
+}
+
+.contact__header h1 {
+    color: var(--title);
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.contact__header p {
+    text-align: center;
+    color: var(--text-muted);
+    margin: 0 0 12px 0;
+}
+
+.contact__header svg {
+    display: block;
+    margin: 8px auto 0;
+    color: var(--title-article);
+}
+
+.contact__form {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 0 auto 20px;
+}
+
+.contact__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.contact__form-group label {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.contact__form-group input,
+.contact__form-group textarea {
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 12px 14px;
+    background: #D6B7FF;
+    color: #1a1a1a;
+}
+
+.contact__form-group textarea { resize: vertical; }
+
+.contact__submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 999px;
+    background: var(--title-article);
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact__submit svg { color: #fff; }
+
+.contact__info {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.contact__info h2 {
+    margin-top: 0;
+    color: var(--text-dark);
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.contact__info-item + .contact__info-item {
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.contact__info-item svg {
+    color: var(--title-article);
+}
+
+.contact__info-item h3 { margin: 0; color: var(--text-dark); }
+.contact__info-item a, .contact__info-item p { margin: 2px 0 0 0; color: var(--text-dark); }
+
+/* ===============================================
+   À PROPOS
+   =============================================== */
+.about {
+    max-width: var(--max-width);
+    padding: 120px 20px 60px;
+    margin: 0 auto;
+}
+
+.about__section > h1 {
+    color: #DAB2FF;
+    font-size: 40px;
+    margin: 0 0 40px 0;
+}
+
+.about__section > h2 {
+    color: #DAB2FF;
+    font-size: 30px;
+    margin: 40px 0 40px 0;
+}
+
+.about__card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    color: var(--text-dark);
+}
+
+.about__card h2, .about__card h3 {
+    color: var(--text-dark);
+    margin-top: 0;
+}
+
+.about__card p { color: var(--text-dark); }
+
+.Glossary__header h1 {
+    color: var(--title);
+    font-size: 28px;
+    margin: 0 0 6px 0;
+}
+
+.Glossary__header p {
+    color: var(--text-muted);
+    margin: 0 0 16px 0;
+}
+
+.Glossary__terms {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.Glossary-term {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    color: var(--text-dark);
+    max-width: 440px;
+    margin: 0 auto; /* cartes centrées */
+}
+
+.Glossary-term h2 {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.Glossary-term p {
+    color: var(--text-dark);
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+}
+
+.Glossary-link {
+    color: var(--title-article);
+    text-decoration: underline;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .Glossary__terms {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .carousel__nav {
