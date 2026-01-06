@@ -677,10 +677,18 @@ nav {
     margin-bottom: 40px;
 }
 
-.article__intro-text p {
-    font-size: 18px;
+.article__intro p {
+    font-size: 16px;
     line-height: 1.6;
     color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article__intro-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .article__figure {
@@ -728,10 +736,11 @@ nav {
 }
 
 .article__section p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.8;
     color: var(--text);
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .article__link,
