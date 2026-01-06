@@ -912,6 +912,7 @@ nav {
     font-size: 28px;
     color: var(--title);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .related-articles__grid {
