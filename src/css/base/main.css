@@ -702,8 +702,28 @@ nav {
     margin-bottom: 12px;
 }
 
+.article__figure--double {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.article__figure--double img {
+    width: calc(50% - 10px);
+    border-radius: var(--border-radius);
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.article__figure--double figcaption {
+    width: 100%;
+}
+
 .article__figure figcaption {
-    font-size: 14px;
+    font-size: 11px;
     color: var(--text-muted);
     font-style: italic;
     text-align: left;
@@ -760,7 +780,7 @@ nav {
     border-left: none;
     padding: 22px;
     margin: 40px 0;
-    border-radius: 60px;
+    border-radius: 25px;
 }
 
 .article__quote p {
