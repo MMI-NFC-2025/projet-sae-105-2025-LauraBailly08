@@ -756,7 +756,7 @@ nav {
 }
 
 .article__section p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.8;
     color: var(--text);
     margin-bottom: 20px;
@@ -778,7 +778,7 @@ nav {
 .article__quote {
     background: var(--card-bg);
     border-left: none;
-    padding: 22px;
+    padding: 30px;
     margin: 40px 0;
     border-radius: 25px;
 }
@@ -787,13 +787,31 @@ nav {
     font-size: 15px;
     font-style: italic;
     color: var(--text-dark);
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .article__quote cite {
+    display: block;
     font-size: 14px;
     color: var(--text-dark);
-    font-style: italic;
+    font-style: normal;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 16px;
+}
+
+.article__quote-link {
+    display: inline-block;
+    color: var(--title-article);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.article__quote-link:hover {
+    opacity: 0.8;
 }
 
 .article__Glossary-link {
