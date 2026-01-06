@@ -729,6 +729,13 @@ nav {
     text-align: left;
 }
 
+.article__figure--hidden-figures img {
+    width: 355px;
+    height: 498px;
+    object-fit: cover;
+    
+}
+
 .article__figure-link {
     color: var(--title);
     text-decoration: underline;
@@ -956,6 +963,8 @@ nav {
 .video-wrapper {
     position: relative;
     width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
     margin: 20px 0;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -964,9 +973,10 @@ nav {
 
 .video-wrapper video {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     background: #000;
+    object-fit: cover;
 }
 
 .video-wrapper video::-webkit-media-controls {
