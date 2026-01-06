@@ -1095,26 +1095,37 @@ nav {
     color: var(--title);
     font-size: 28px;
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 0 0 16px 0;
 }
 
 .contact__header p {
     text-align: center;
     color: var(--text-muted);
-    margin: 0 0 12px 0;
+    margin: 0;
 }
 
 .contact__header svg {
     display: block;
-    margin: 8px auto 0;
-    color: var(--title-article);
+    margin: 20px auto 0;
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 .contact__form {
     background: var(--card-bg);
     border-radius: var(--border-radius);
     padding: 20px;
-    margin: 0 auto 20px;
+    margin: 40px auto 20px;
 }
 
 .contact__form-group {
