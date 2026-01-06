@@ -737,6 +737,8 @@ nav {
 .article__link,
 .link__article {
     color: var(--title);
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
 }
 
 .article__link:hover,
