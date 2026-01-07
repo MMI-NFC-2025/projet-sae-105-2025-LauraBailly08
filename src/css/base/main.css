@@ -705,9 +705,14 @@ p {
     border-radius: 12px;
     padding: 12px 14px;
     background: #D6B7FF;
-    color: #1a1a1a;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+}
+
+.contact__form-group input::placeholder,
+.contact__form-group textarea::placeholder {
+    color: #000000;
 }
 
 .contact__form-group textarea { resize: vertical; }
