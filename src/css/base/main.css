@@ -1314,9 +1314,10 @@ nav {
 }
 
 .Glossary-link {
-    color: var(--title-article);
-    text-decoration: underline;
-    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
 }
 
 @media (min-width: 768px) {
