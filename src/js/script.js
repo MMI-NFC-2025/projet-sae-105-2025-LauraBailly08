@@ -91,3 +91,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const langLink = document.querySelector('.language');
+    if (!langLink) return;
+
+    const pathname = window.location.pathname;
+    const parts = pathname.split('/');
+    const filename = parts[parts.length - 1] || 'index.html';
+    const isFr = parts.includes('fr');
+    const isEn = parts.includes('en');
+
+    if (isFr) {
+        langLink.textContent = 'en';
+        langLink.setAttribute('href', `../en/${filename}`);
+    } else if (isEn) {
+        langLink.textContent = 'fr';
+        langLink.setAttribute('href', `../fr/${filename}`);
+    }
+});

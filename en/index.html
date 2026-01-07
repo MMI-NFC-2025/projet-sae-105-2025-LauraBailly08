@@ -1,20 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Langage / Langue</title>
+    <meta name="description" content="The Matilda effect describes the systematic bias that denies, diminishes, or misattributes the credit for women's scientific work to their male colleagues.">
+    <title>The Matilda Effect - Noyaux d'ombre</title>
+    <link rel="stylesheet" href="../src/css/base/main.css">
+    <script src="../src/js/script.js" defer></script>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a onclick="document.cookie = 'nf_lang=en; path=/'" href="/en/index.html">Home in English</a></li>
-            <li><a onclick="document.cookie = 'nf_lang=fr; path=/'" href="/fr/index.html">Accueil en Français</a></li>
-        </ul>
-    </nav>
-</body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img class="header__logo" src="../assets/img/logo-matilda.svg" alt="Noyaux d'ombre logo"></a>
+            <a href="index.html">Noyaux d'ombre</a>
+        </div>
+        <nav>
+            <a href="../en/index.html" class="language">en</a>
+            <button class="btn__menu" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav" data-menu-toggle="menu">
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
 
+    <div class="menu-overlay" aria-hidden="true"></div>
+    <nav class="menu-mobile" id="mainNav" aria-hidden="true">
+        <div class="menu-mobile__content">
+            <h3 class="menu-mobile__section-title">Articles</h3>
+            <ul class="menu-mobile__list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Her discovery</a></li>
+                <li><a href="article-3.html">Women scientists in literature</a></li>
+                <li><a href="article-4.html">Cinema: rehabilitating the forgotten</a></li>
+                <li><a href="article-5.html">Hidden figure</a></li>
+            </ul>
+            <h3 class="menu-mobile__section-title">Others</h3>
+            <ul class="menu-mobile__list">
+                <li><a href="glossaire.html">Glossary</a></li>
+                <li><a href="à-propos.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autres-projets.html">Other projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>The Matilda Effect</h1>
+        <p class="hero__description">The Matilda effect describes the systematic bias that denies, diminishes, or misattributes the credit for women's scientific work to their male colleagues.</p>
+        <blockquote class="hero__quote">
+            <p>"Science is part of life. It is not something you can separate."</p>
+            <cite>– Lise Meitner, physicist (1878–1968)</cite>
+        </blockquote>
+    </section>
+    
+    <section class="featured">  
+        <h2>Featured</h2>
+        <article class="featured__article">
+            <img src="../assets/img/image-article-matilda.avif" alt="Portrait of Lise Meitner">
+            <div class="featured__content">
+                <h3>Who was Lise Meitner?</h3>
+                <p>A physicist whose discoveries changed the world of nuclear science.</p>
+                <a href="article-1.html" class="featured__link">Read the article</a>
+            </div>
+        </article>
+    </section>
+    <section class="articles">
+        <h2>Articles</h2>   
+        <div class="carousel">
+            <button class="carousel__nav carousel__nav--prev" aria-label="Previous article">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="carousel__container">
+                <article class="carousel__card">
+                    <img src="../assets/img/sa-decouverte-page-d'accueil.avif" alt="Illustration of Lise Meitner’s discovery">
+                    <div class="carousel__content">
+                        <h3>Her discovery</h3>
+                        <p>Discover how Lise Meitner revolutionized the world of science</p>
+                        <a href="article-2.html" class="carousel__link">Read more</a>
+                    </div>
+                </article>
+
+                <article class="carousel__card">
+                    <img src="../assets/img/image-article-femme-science-page-d'aaccueil.avif" alt="Women scientists">
+                    <div class="carousel__content">
+                        <h3>Women scientists</h3>
+                        <p>Lise Meitner was not the only one made invisible</p>
+                        <a href="article-3.html" class="carousel__link">Read more</a>
+                    </div>
+                </article>
+
+                <article class="carousel__card">
+                    <img src="../assets/img/image-article-cinema-page-d'accueil.avif" alt="Cinema and science">
+                    <div class="carousel__content">
+                        <h3>Cinema: rehabilitating the forgotten</h3>
+                        <p>The documentary "Picture a Scientist" highlights sexism in the sciences</p>
+                        <a href="article-4.html" class="carousel__link">Read more</a>
+                    </div>
+                </article>
+
+                <article class="carousel__card">
+                    <img src="../assets/img/image-article-hidden-figure-page-d'accueil.avif" alt="Hidden Figures">
+                    <div class="carousel__content">
+                        <h3>Hidden figure</h3>
+                        <p>Hidden Figure tells the true story of three NASA mathematicians, victims of the Matilda effect.</p>
+                        <a href="article-5.html" class="carousel__link">Read more</a>
+                    </div>
+                </article>
+            </div>
+
+            <button class="carousel__nav carousel__nav--next" aria-label="Next article">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div class="carousel__pagination">
+                <button class="carousel__dot carousel__dot--active" aria-label="Article 1"></button>
+                <button class="carousel__dot" aria-label="Article 2"></button>
+                <button class="carousel__dot" aria-label="Article 3"></button>
+                <button class="carousel__dot" aria-label="Article 4"></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="../assets/img/logo-matilda.svg" alt="Noyaux d'ombre logo" class="footer__logo">
+            <span class="footer__name">Noyaux d'ombre</span>
+        </div>
+        <p class="footer__description">Highlighting the scientific contributions of women</p>
+        
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Her discovery</a></li>
+                <li><a href="article-3.html">Women scientists in literature</a></li>
+                <li><a href="article-4.html">Cinema: rehabilitating the forgotten</a></li>
+                <li><a href="article-5.html">Hidden figure</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer__links">
+            <ul class="footer__links-list">
+                <li><a href="à-propos.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autres-projets.html">Other projects</a></li>
+                <li><a href="Glossaire.html">Glossary</a></li>
+            </ul>
+        </nav>
+
+        <p class="footer__copyright">2025 Noyaux d'ombre</p>
+        <p class="footer__credit">Project carried out in 2025 as part of an educational exercise in the MMI department of Montbéliard</p>
+    </footer>
+</body>
 </html>

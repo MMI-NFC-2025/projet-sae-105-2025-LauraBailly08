@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cinema plays a crucial role in rehabilitating women scientists forgotten by history.">
+    <title>Cinema: rehabilitating the forgotten - Noyaux d'ombre</title>
+    <link rel="stylesheet" href="../src/css/base/main.css">
+    <script src="../src/js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img class="header__logo" src="../assets/img/logo-matilda.svg" alt="Noyaux d'ombre logo"></a>
+            <a href="index.html">Noyaux d'ombre</a>
+        </div>
+        <nav>
+            <a href="../en/index.html" class="language">en</a>
+            <button class="btn__menu" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav" data-menu-toggle="menu">
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+    <nav class="menu-mobile" id="mainNav" aria-hidden="true">
+        <div class="menu-mobile__content">
+            <h3 class="menu-mobile__section-title">Articles</h3>
+            <ul class="menu-mobile__list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Her discovery</a></li>
+                <li><a href="article-3.html">Women scientists in literature</a></li>
+                <li><a href="article-4.html">Cinema: rehabilitating the forgotten</a></li>
+                <li><a href="article-5.html">Library object</a></li>
+            </ul>
+            <h3 class="menu-mobile__section-title">Others</h3>
+            <ul class="menu-mobile__list">
+                <li><a href="glossaire.html">Glossary</a></li>
+                <li><a href="à-propos.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autres-projets.html">Other projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="article">
+        <header class="article__header">
+            <h1>Cinema: rehabilitating the forgotten</h1>
+            <div class="article__meta">
+                <span class="article__meta-item"><img src="../assets/img/icone_calendrier.svg" alt="" class="article__meta-icon" aria-hidden="true"><time datetime="2025-10-20">October 20, 2025</time></span>
+                <span class="article__meta-item"><img src="../assets/img/icone_horloge.svg" alt="" class="article__meta-icon" aria-hidden="true"><span class="article__reading-time">3 min</span></span>
+            </div>
+        </header>
+
+        <section class="article__section">
+            <h2>"Picture a Scientist": a powerful documentary on sexism in science</h2>
+            
+            <figure class="article__figure">
+                <img src="../assets/img/image-1-cinéma.avif" alt="Poster of the documentary Picture a Scientist">
+                <figcaption>NOVA — Picture a Scientist</figcaption>
+            </figure>
+
+            <p>This 2020 documentary exposes the harassment and discrimination faced by women scientists. The film compiles testimonies from women in science and shows the Matilda effect at work.</p>
+
+            <p><em>Click to play the trailer</em></p>
+
+            <div class="video-wrapper">
+                <video controls poster="../assets/img/image-1-cinéma.avif">
+                    <source src="../assets/video/Picture A Scientist - Official Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video.
+                </video>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=Dg2Lyu_nWnk&feature=youtu.be" class="video-link" target="_blank" rel="noopener noreferrer">Documentary: "Picture a Scientist"</a>
+
+            <p>"Picture a Scientist" sheds light on systemic sexism across scientific fields. Through the stories of chemists and geologists, the film reveals that the Matilda effect spares no one and reflects ongoing realities.</p>
+        </section>
+
+        <section class="article__section">
+            <h2>5 films to better understand the Matilda effect</h2>
+            
+            <div class="films-carousel">
+                <button class="carousel__nav carousel__nav--prev" aria-label="Previous film">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="films-container">
+                    <article class="film-card">
+                        <img src="../assets/img/image-2-cinéma.avif" alt="Radioactive">
+                        <div class="film-card__content">
+                            <h3>Radioactive</h3>
+                            <div class="film-card__meta">
+                                <span class="film-card__year">2020</span>
+                                <span class="film-card__director">Marjane Satrapi</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="../assets/img/image-3-cinéma.avif" alt="Big Eyes">
+                        <div class="film-card__content">
+                            <h3>Big Eyes</h3>
+                            <div class="film-card__meta">
+                                <span class="film-card__year">2014</span>
+                                <span class="film-card__director">Tim Burton</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="../assets/img/image-4-cinéma.avif" alt="Hidden Figures">
+                        <div class="film-card__content">
+                            <h3>Hidden Figures</h3>
+                            <div class="film-card__meta">
+                                <span class="film-card__year">2016</span>
+                                <span class="film-card__director">Theodore Melfi</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="../assets/img/image-5-cinéma.avif" alt="Rosies Top Secret">
+                        <div class="film-card__content">
+                            <h3>Rosies Top Secret</h3>
+                            <div class="film-card__meta">
+                                <span class="film-card__year">2010</span>
+                                <span class="film-card__director">Cynthia Baighman</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="film-card">
+                        <img src="../assets/img/image-6-cinéma.avif" alt="Meitner on Bomb">
+                        <div class="film-card__content">
+                            <h3>Meitner on Bomb</h3>
+                            <div class="film-card__meta">
+                                <span class="film-card__year">2013</span>
+                                <span class="film-card__director">Wolf von Truchsess</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="carousel__nav carousel__nav--next" aria-label="Next film">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="related-articles">
+            <h2>Related article</h2>
+            <div class="related-articles__grid">
+                <article class="related-card">
+                    <img src="../assets/img/image-article-hidden-figure-page-d'accueil.avif" alt="Hidden Figures">
+                    <div class="related-card__content">
+                        <h3>Hidden figures</h3>
+                        <a href="article-5.html" class="related-card__link">Read the article</a>
+                    </div>
+                </article>
+            </div>
+
+            <a href="Glossaire.html" class="article__Glossary-link">
+                <img src="../assets/img/icone-Glossaire.svg" alt="" class="article__Glossary-icon">
+                <span>Browse the Glossary</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="../assets/img/logo-matilda.svg" alt="Noyaux d'ombre logo" class="footer__logo">
+            <span class="footer__name">Noyaux d'ombre</span>
+        </div>
+        <p class="footer__description">Highlighting the scientific contributions of women</p>
+        
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a href="article-1.html">Lise Meitner</a></li>
+                <li><a href="article-2.html">Her discovery</a></li>
+                <li><a href="article-3.html">Women scientists in literature</a></li>
+                <li><a href="article-4.html">Cinema: rehabilitating the forgotten</a></li>
+                <li><a href="article-5.html">Hidden figure</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer__links">
+            <ul class="footer__links-list">
+                <li><a href="à-propos.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="autres-projets.html">Other projects</a></li>
+                <li><a href="Glossaire.html">Glossary</a></li>
+            </ul>
+        </nav>
+
+        <p class="footer__copyright">2025 Noyaux d'ombre</p>
+        <p class="footer__credit">Project carried out in 2025 as part of an educational exercise in the MMI department of Montbéliard</p>
+    </footer>
+</body>
+</html>
+
