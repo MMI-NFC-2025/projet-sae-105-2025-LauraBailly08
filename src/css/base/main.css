@@ -297,8 +297,8 @@ nav {
 .hero__quote {
     background: var(--card-bg);
     color: var(--text-dark);
-    padding: 22px 24px;
-    border-radius: 60px;
+    padding: 18px 20px;
+    border-radius:25px;
     margin-top: 80px;
 }
 
@@ -1336,10 +1336,10 @@ nav {
 }
 
 .Glossary-link {
-    color: inherit;
-    text-decoration: none;
-    cursor: default;
-    pointer-events: none;
+    color: var(--title-article);
+    text-decoration: underline;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 @media (min-width: 768px) {
