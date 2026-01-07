@@ -1,0 +1,22 @@
+
+:root {
+	--bg: #080C14;
+	--title: #DAB2FF;
+	--title-article: #AD46FF;
+	--card-bg: #F3E7FF;
+	--text: #ffffff;
+	--text-muted: rgba(255, 255, 255, 0.8);
+	--text-dark: #1a1a1a;
+	--border-radius: 25px;
+	--spacing-section: 60px;
+	--spacing-card: 20px;
+	--max-width: 1200px;
+	--gutter: 20px;
+}
+
+@media (min-width: 768px) {
+	:root {
+		--gutter: 40px;
+		--spacing-section: 80px;
+	}
+}

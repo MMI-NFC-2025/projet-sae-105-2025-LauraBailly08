@@ -1,0 +1,43 @@
+
+.carousel__nav {
+	background: none;
+	border: none;
+	color: var(--title);
+	cursor: pointer;
+	padding: 10px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.2s ease;
+	flex-shrink: 0;
+}
+
+.carousel__nav:hover {
+	opacity: 0.8;
+}
+
+.carousel__nav--prev {
+	left: 10px;
+}
+
+.carousel__nav--next {
+	right: 10px;
+}
+
+.carousel__dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: rgba(173, 70, 255, 0.3);
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.carousel__dot--active {
+	background-color: var(--title-article);
+}
+
+.carousel__dot:hover {
+	background-color: var(--title-article);
+}

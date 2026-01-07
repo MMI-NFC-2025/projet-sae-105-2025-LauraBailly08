@@ -1,0 +1,89 @@
+.footer {
+	background: var(--bg);
+	border-top: 1px solid rgba(218, 178, 255, 0.1);
+	padding: 40px var(--gutter) 30px;
+	margin-top: 60px;
+	text-align: left;
+}
+
+.footer__brand {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.footer__logo {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+.footer__name {
+	font-weight: 600;
+	color: var(--text);
+	font-size: 18px;
+}
+
+.footer__description {
+	font-size: 16px;
+	color: var(--text-muted);
+	margin-bottom: 24px;
+	line-height: 1.5;
+}
+
+.footer__nav,
+.footer__links {
+	margin-bottom: 20px;
+}
+
+.footer__nav-list,
+.footer__links-list {
+	list-style: none !important;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer__nav-list li,
+.footer__links-list li {
+	list-style: none !important;
+}
+
+.footer__nav-list a {
+	color: var(--text-muted);
+	font-size: 16px;
+	font-weight: 400;
+	transition: color 0.2s ease;
+}
+
+.footer__links-list a {
+	color: var(--text-muted);
+	font-size: 14px;
+	font-weight: 400;
+	transition: color 0.2s ease;
+	opacity: 0.7;
+}
+
+.footer__nav-list a:hover {
+	color: var(--title);
+}
+
+.footer__links-list a:hover {
+	color: var(--title);
+}
+
+.footer__copyright {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.4);
+	margin-top: 24px;
+}
+
+.footer__credit {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.3);
+	margin-top: 8px;
+	line-height: 1.4;
+}

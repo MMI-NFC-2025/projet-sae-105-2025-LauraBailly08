@@ -1,0 +1,119 @@
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Article figures */
+.article__figure {
+	margin: 40px 0;
+	text-align: center;
+}
+
+.article__figure img {
+	width: 100%;
+	border-radius: var(--border-radius);
+	margin-bottom: 12px;
+}
+
+.article__figure--double {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	margin: 40px 0;
+	text-align: center;
+}
+
+.article__figure--double img {
+	width: calc(50% - 10px);
+	border-radius: var(--border-radius);
+	margin-bottom: 12px;
+	object-fit: cover;
+}
+
+.article__figure--double figcaption {
+	width: 100%;
+}
+
+.article__figure figcaption {
+	font-size: 11px;
+	color: var(--text-muted);
+	font-style: italic;
+	text-align: left;
+}
+
+.article__figure--hidden-figures img {
+	width: 355px;
+	height: 498px;
+	object-fit: cover;
+}
+
+.article__figure--secondary {
+	margin: 30px 0;
+}
+
+.article__figure-link {
+	color: var(--title);
+	text-decoration: underline;
+	font-style: italic;
+	transition: opacity 0.2s ease;
+}
+
+.article__figure-link:hover {
+	opacity: 0.8;
+}
+
+/* Video */
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 640px;
+	aspect-ratio: 16 / 9;
+	margin: 20px 0;
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	border: 2px solid var(--title-article);
+}
+
+.video-wrapper video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #000;
+	object-fit: cover;
+}
+
+.video-wrapper video::-webkit-media-controls {
+	display: flex;
+	flex-direction: column;
+}
+
+.video-wrapper video::-webkit-media-controls-panel {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper video::-webkit-media-controls-volume-slider {
+	display: none;
+}
+
+.video-wrapper video::-webkit-media-controls-fullscreen-button {
+	display: none;
+}
+
+.video-link {
+	display: inline-block;
+	color: #DAB2FF;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 15px 0;
+	transition: opacity 0.2s ease;
+}
+
+.video-link:hover {
+	opacity: 0.8;
+}
