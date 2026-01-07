@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM :BAILLY
+- PRÉNOM : Laura
+- GROUPE : b1
+- URL du site : https://noyaux-d-ombre.netlify.app/fr/ 
+- URL FIGMA : https://www.figma.com/design/WgaDvVP7JoNdHl3mmHb0SO/Bailly_Laura_Maquette_Projet?node-id=4-181&t=B5sBs6ZZpqofxhL4-1 
