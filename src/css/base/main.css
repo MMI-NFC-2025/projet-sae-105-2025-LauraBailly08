@@ -1037,7 +1037,7 @@ nav {
    =============================================== */
 .other-projects {
     max-width: var(--max-width);
-    padding: 120px 20px 60px;
+    padding: 120px 20px 30px;
     margin: 0 auto;
 }
 
@@ -1054,11 +1054,18 @@ nav {
     margin: 0 0 8px 0;
 }
 
+.projects__header p:first-of-type {
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
 .projects__liést,
 .projects__list {
     background: var(--card-bg);
     border-radius: var(--border-radius);
     padding: 20px;
+    margin-top: 40px;
 }
 
 .project-card {
@@ -1125,7 +1132,7 @@ nav {
     background: var(--card-bg);
     border-radius: var(--border-radius);
     padding: 20px;
-    margin: 40px auto 20px;
+    margin: 40px auto 60px;
 }
 
 .contact__form-group {
@@ -1182,11 +1189,20 @@ nav {
     background: var(--card-bg);
     border-radius: var(--border-radius);
     padding: 20px;
+    margin: 20px auto 10px;
 }
 
 .contact__info h2 {
     margin-top: 0;
     color: var(--text-dark);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact__info-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
 }
 
 .contact__info-item {
@@ -1204,8 +1220,17 @@ nav {
     color: var(--title-article);
 }
 
-.contact__info-item h3 { margin: 0; color: var(--text-dark); }
-.contact__info-item a, .contact__info-item p { margin: 2px 0 0 0; color: var(--text-dark); }
+.contact__info-item h3 { 
+    margin: 0; 
+    color: var(--text-dark); 
+    font-size: 18px;
+}
+
+.contact__info-item a, .contact__info-item p { 
+    margin: 2px 0 0 0; 
+    color: var(--text-dark); 
+    font-size: 13px;
+}
 
 /* ===============================================
    À PROPOS
